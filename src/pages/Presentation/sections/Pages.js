@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -20,16 +20,16 @@ import { Link } from "react-router-dom";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
-import MKTypography from "components/MKTypography";
+// Eventflow.app React components
+import MKBox from "../../../components/MKBox";
+import MKBadge from "../../../components/MKBadge";
+import MKTypography from "../../../components/MKTypography";
 
 // Presentation page components
-import ExampleCard from "pages/Presentation/components/ExampleCard";
+import ExampleCard from "../../../pages/Presentation/components/ExampleCard";
 
 // Data
-import data from "pages/Presentation/sections/data/pagesData";
+import data from "../../../pages/Presentation/sections/data/pagesData";
 
 function Pages() {
   const renderData = data.map(({ image, name, route }) => (

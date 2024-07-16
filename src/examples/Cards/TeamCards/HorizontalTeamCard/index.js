@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -20,9 +20,9 @@ import PropTypes from "prop-types";
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Eventflow.app React components
+import MKBox from "../../../../components/MKBox";
+import MKTypography from "../../../../components/MKTypography";
 
 function HorizontalTeamCard({ image, name, position, description }) {
   return (

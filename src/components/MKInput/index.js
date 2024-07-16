@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -19,7 +19,7 @@ import { forwardRef } from "react";
 import PropTypes from "prop-types";
 
 // Custom styles for MKInput
-import MKInputRoot from "components/MKInput/MKInputRoot";
+import MKInputRoot from "../MKInput/MKInputRoot";
 
 const MKInput = forwardRef(({ error, success, disabled, ...rest }, ref) => (
   <MKInputRoot {...rest} ref={ref} ownerState={{ error, success, disabled }} />

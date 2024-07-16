@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -14,24 +14,24 @@ Coded by www.creative-tim.com
 */
 
 // Sections components
-import BaseLayout from "layouts/sections/components/BaseLayout";
-import View from "layouts/sections/components/View";
+import BaseLayout from "../../../sections/components/BaseLayout";
+import View from "../../../sections/components/View";
 
 // Buttons page components
-import ButtonsGradient from "layouts/sections/elements/buttons/components/ButtonsGradient";
-import ButtonsContained from "layouts/sections/elements/buttons/components/ButtonsContained";
-import ButtonsOutlined from "layouts/sections/elements/buttons/components/ButtonsOutlined";
-import ButtonsSizes from "layouts/sections/elements/buttons/components/ButtonsSizes";
-import ButtonsIconLeft from "layouts/sections/elements/buttons/components/ButtonsIconLeft";
-import ButtonsIconRight from "layouts/sections/elements/buttons/components/ButtonsIconRight";
+import ButtonsContained from "../../elements/buttons/components/ButtonsContained";
+import ButtonsGradient from "../../elements/buttons/components/ButtonsGradient";
+import ButtonsIconLeft from "../../elements/buttons/components/ButtonsIconLeft";
+import ButtonsIconRight from "../../elements/buttons/components/ButtonsIconRight";
+import ButtonsOutlined from "../../elements/buttons/components/ButtonsOutlined";
+import ButtonsSizes from "../../elements/buttons/components/ButtonsSizes";
 
 // Buttons page components code
-import buttonsGradientCode from "layouts/sections/elements/buttons/components/ButtonsGradient/code";
-import buttonsContainedCode from "layouts/sections/elements/buttons/components/ButtonsContained/code";
-import buttonsOutlinedCode from "layouts/sections/elements/buttons/components/ButtonsOutlined/code";
-import buttonsSizesCode from "layouts/sections/elements/buttons/components/ButtonsSizes/code";
-import buttonsIconLeftCode from "layouts/sections/elements/buttons/components/ButtonsIconLeft/code";
-import buttonsIconRightCode from "layouts/sections/elements/buttons/components/ButtonsIconRight/code";
+import buttonsContainedCode from "../../elements/buttons/components/ButtonsContained/code";
+import buttonsGradientCode from "../../elements/buttons/components/ButtonsGradient/code";
+import buttonsIconLeftCode from "../../elements/buttons/components/ButtonsIconLeft/code";
+import buttonsIconRightCode from "../../elements/buttons/components/ButtonsIconRight/code";
+import buttonsOutlinedCode from "../../elements/buttons/components/ButtonsOutlined/code";
+import buttonsSizesCode from "../../elements/buttons/components/ButtonsSizes/code";
 
 function Buttons() {
   return (

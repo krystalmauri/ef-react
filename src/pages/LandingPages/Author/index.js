@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -16,23 +16,24 @@ Coded by www.creative-tim.com
 // @mui material components
 import Card from "@mui/material/Card";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
+// Eventflow.app React components
+import MKBox from "../../../components/MKBox";
 
-// Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
+// Eventflow.app React examples
+import DefaultNavbar from "../../../examples/Navbars/DefaultNavbar";
 
 // Author page sections
-import Profile from "pages/LandingPages/Author/sections/Profile";
-import Posts from "pages/LandingPages/Author/sections/Posts";
-import Contact from "pages/LandingPages/Author/sections/Contact";
-import Footer from "pages/LandingPages/Author/sections/Footer";
+import Contact from "../Author/sections/Contact";
+import Footer from "../Author/sections/Footer";
+import Posts from "../Author/sections/Posts";
+import Profile from "../Author/sections/Profile";
 
 // Routes
-import routes from "routes";
+import routes from "../../../routes";
 
 // Images
-import bgImage from "assets/images/city-profile.jpg";
+import bgImage from "../../../assets/images/bg1.jpg";
+import HomePage from "../Home/HomePage";
 
 function Author() {
   return (
@@ -75,6 +76,7 @@ function Author() {
             boxShadow: ({ boxShadows: { xxl } }) => xxl,
           }}
         >
+          <HomePage/>
           <Profile />
           <Posts />
         </Card>

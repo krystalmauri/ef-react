@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -13,12 +13,12 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// Material Kit 2 React base styles
-import colors from "assets/theme/base/colors";
+// Eventflow.app React base styles
+import colors from "../base/colors";
 
-// Material Kit 2 React helper functions
-import rgba from "assets/theme/functions/rgba";
-import pxToRem from "assets/theme/functions/pxToRem";
+// Eventflow.app React helper functions
+import rgba from "../../theme/functions/rgba";
+import pxToRem from "../../theme/functions/pxToRem";
 
 const { dark, white } = colors;
 

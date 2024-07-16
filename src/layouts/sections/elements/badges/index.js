@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -14,18 +14,18 @@ Coded by www.creative-tim.com
 */
 
 // Sections components
-import BaseLayout from "layouts/sections/components/BaseLayout";
-import View from "layouts/sections/components/View";
+import BaseLayout from "../../components/BaseLayout";
+import View from "../../components/View";
 
 // Badges page components
-import BadgesGradient from "layouts/sections/elements/badges/components/BadgesGradient";
-import BadgesSimple from "layouts/sections/elements/badges/components/BadgesSimple";
-import BadgesSimpleRounded from "layouts/sections/elements/badges/components/BadgesSimpleRounded";
+import BadgesGradient from "../badges/components/BadgesGradient";
+import BadgesSimple from "../badges/components/BadgesSimple";
+import BadgesSimpleRounded from "../badges/components/BadgesSimpleRounded";
 
 // Badges page components code
-import badgesGradientCode from "layouts/sections/elements/badges/components/BadgesGradient/code";
-import badgesSimpleCode from "layouts/sections/elements/badges/components/BadgesSimple/code";
-import badgesSimpleRoundedCode from "layouts/sections/elements/badges/components/BadgesSimpleRounded/code";
+import badgesGradientCode from "../badges/components/BadgesGradient/code";
+import badgesSimpleCode from "../badges/components/BadgesSimple/code";
+import badgesSimpleRoundedCode from "../badges/components/BadgesSimpleRounded/code";
 
 function Badges() {
   return (

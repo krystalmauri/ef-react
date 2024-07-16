@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -18,29 +18,59 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+// Eventflow.app React components
+import MKBox from "../../../components/MKBox";
+import MKTypography from "../../../components/MKTypography";
 
-// Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+// Eventflow.app React examples
+import DefaultNavbar from "../../../examples/Navbars/DefaultNavbar";
+import DefaultFooter from "../../../examples/Footers/DefaultFooter";
 
 // About Us page sections
-import Information from "pages/LandingPages/AboutUs/sections/Information";
-import Team from "pages/LandingPages/AboutUs/sections/Team";
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
-import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
+import Information from "../AboutUs/sections/Information.js";
+import Team from "../AboutUs/sections/Team.js";
+import Featuring from "../AboutUs/sections/Featuring.js";
+import Newsletter from "../AboutUs/sections/Newsletter.js";
 
 // Routes
-import routes from "routes";
-import footerRoutes from "footer.routes";
+import routes from "../../../routes.js";
+import footerRoutes from "../../../footer.routes.js";
 
 // Images
-import bgImage from "assets/images/bg-about-us.jpg";
+import bgImage from "../../../assets/images/bg1.jpg";
+
+import React, { useEffect, useState } from 'react';
+import { collection, getDocs, query, where } from 'firebase/firestore';
+import { firestore } from '../../../firebase.ts';
+
 
 function AboutUs() {
+  const [venues, setEntries] = useState([]);
+  const [ search, setSearch ] = useState("");
+
+  const bg = "https://server54.web-hosting.com:2083/cpsess8127163539/viewer/home%2fkryspknt%2feventflow.app%2fimages/bg1.jpg";
+
+
+  async function getVendors(){
+    //  const q = query(collection(firestore, "Vendors"), where("vendor_type", "==", "Designer"));
+      const q = query(collection(firestore, "Saint Louis"));
+  const querySnapshot = await getDocs(q);
+  querySnapshot.forEach((doc) => {
+    const entries = querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    console.log(doc.id, "all => ", doc.data());
+    console.log('my entries ', entries);
+    setEntries(entries);
+  });
+  }
+
+  useEffect(() => {
+    getVendors();
+
+  }, []);
+
   return (
     <>
       <DefaultNavbar
@@ -89,31 +119,28 @@ function AboutUs() {
                 },
               })}
             >
-              Work with an amazing design
+              Your Specialist in Event Planning
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-              have the opportunity to play this game
+            Discover EventFlow, your ultimate platform for orchestrating unforgettable weddings 
+            and milestone birthday celebrations. Available everywhere, our 
+            app connects you effortlessly with exceptional vendors and manages every detail with precision.
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
-            </MKButton>
+           
             <MKTypography variant="h6" color="white" mt={8} mb={1}>
               Find us on
             </MKTypography>
             <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              <MKTypography component="a" variant="body1" color="white" href="https://www.facebook.com/profile.php?id=61559047094216" mr={3}>
                 <i className="fab fa-facebook" />
               </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              <MKTypography component="a" variant="body1" color="white" href="https://www.instagram.com/eventflow.app/" mr={3}>
                 <i className="fab fa-instagram" />
               </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-twitter" />
+              <MKTypography component="a" variant="body1" color="white" href="https://www.tiktok.com/@eventflow.app" mr={3}>
+                <i className="fab fa-tiktok" />
               </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
-                <i className="fab fa-google-plus" />
-              </MKTypography>
+            
             </MKBox>
           </Grid>
         </Container>

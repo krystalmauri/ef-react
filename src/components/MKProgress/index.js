@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -18,11 +18,11 @@ import { forwardRef } from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Material Kit 2 React components
-import MKTypography from "components/MKTypography";
+// Eventflow.app React components
+import MKTypography from "../MKTypography";
 
 // Custom styles for MKProgress
-import MKProgressRoot from "components/MKProgress/MKProgressRoot";
+import MKProgressRoot from "../MKProgress/MKProgressRoot";
 
 const MKProgress = forwardRef(({ variant, color, value, label, ...rest }, ref) => (
   <>

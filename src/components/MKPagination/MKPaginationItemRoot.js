@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -16,8 +16,8 @@ Coded by www.creative-tim.com
 // @mui material components
 import { styled } from "@mui/material/styles";
 
-// Material Kit 2 React components
-import MKButton from "components/MKButton";
+// Eventflow.app React components
+import MKButton from "../MKButton";
 
 export default styled(MKButton)(({ theme, ownerState }) => {
   const { borders, functions, typography, palette } = theme;

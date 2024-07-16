@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -14,16 +14,16 @@ Coded by www.creative-tim.com
 */
 
 // Sections components
-import BaseLayout from "layouts/sections/components/BaseLayout";
-import View from "layouts/sections/components/View";
+import BaseLayout from "../../components/BaseLayout";
+import View from "../../components/View";
 
 // Toggles page components
-import Toggle from "layouts/sections/elements/toggles/components/Toggle";
-import ToggleContext from "layouts/sections/elements/toggles/components/ToggleContext";
+import Toggle from "../toggles/components/Toggle";
+import ToggleContext from "../toggles/components/ToggleContext";
 
 // Toggles page components code
-import toggleCode from "layouts/sections/elements/toggles/components/Toggle/code";
-import toggleContextCode from "layouts/sections/elements/toggles/components/ToggleContext/code";
+import toggleCode from "../toggles/components/Toggle/code";
+import toggleContextCode from "../toggles/components/ToggleContext/code";
 
 function Toggles() {
   return (

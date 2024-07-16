@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -18,8 +18,8 @@ Coded by www.creative-tim.com
   to convert the hex code into rgb for using it inside the rgba color format.
  */
 
-// Material Kit 2 React helper functions
-import hexToRgb from "assets/theme/functions/hexToRgb";
+// Eventflow.app React helper functions
+import hexToRgb from "../functions/hexToRgb";
 
 function rgba(color, opacity) {
   return `rgba(${hexToRgb(color)}, ${opacity})`;

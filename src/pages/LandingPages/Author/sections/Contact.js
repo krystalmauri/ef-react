@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -17,14 +17,14 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Eventflow.app React components
+import MKBox from "../../../../components/MKBox";
+import MKInput from "../../../../components/MKInput";
+import MKButton from "../../../../components/MKButton";
+import MKTypography from "../../../../components/MKTypography";
 
 // Images
-import bgImage from "assets/images/examples/blog2.jpg";
+import bgImage from "../../../../assets/images/bg1.jpg";
 
 function Contact() {
   return (

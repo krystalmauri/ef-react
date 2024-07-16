@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -19,9 +19,9 @@ import PropTypes from "prop-types";
 // @mui material components
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Eventflow.app React components
+import MKBox from "../../../components/MKBox";
+import MKTypography from "../../../components/MKTypography";
 
 function RotatingCardFront({ color, image, icon, title, description }) {
   return (

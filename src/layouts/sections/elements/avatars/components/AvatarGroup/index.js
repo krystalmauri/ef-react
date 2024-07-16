@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -14,19 +14,19 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
+import MuiAvatarGroup from "@mui/material/AvatarGroup";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import MuiAvatarGroup from "@mui/material/AvatarGroup";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKAvatar from "components/MKAvatar";
+// Eventflow.app React components
+import MKAvatar from "../../../../../../components/MKAvatar";
+import MKBox from "../../../../../../components/MKBox";
 
 // Images
-import team1 from "assets/images/team-1.jpg";
-import team2 from "assets/images/team-2.jpg";
-import team3 from "assets/images/team-3.jpg";
-import team4 from "assets/images/team-4.jpg";
+import team1 from "../../../../../../assets/images/team-1.jpg";
+import team2 from "../../../../../../assets/images/team-2.jpg";
+import team3 from "../../../../../../assets/images/team-3.jpg";
+import team4 from "../../../../../../assets/images/team-4.jpg";
 
 function AvatarGroup() {
   return (

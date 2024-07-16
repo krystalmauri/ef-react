@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -17,18 +17,18 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Eventflow.app React components
+import MKBox from "../../../../components/MKBox";
+import MKTypography from "../../../../components/MKTypography";
 
-// Material Kit 2 React examples
-import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
+// Eventflow.app React examples
+import HorizontalTeamCard from "../../../../examples/Cards/TeamCards/HorizontalTeamCard";
 
 // Images
-import team1 from "assets/images/team-5.jpg";
-import team2 from "assets/images/bruce-mars.jpg";
-import team3 from "assets/images/ivana-squares.jpg";
-import team4 from "assets/images/ivana-square.jpg";
+import team1 from "../../../../assets/images/team-5.jpg";
+import team2 from "../../../../assets/images/bruce-mars.jpg";
+import team3 from "../../../../assets/images/ivana-squares.jpg";
+import team4 from "../../../../assets/images/ivana-square.jpg";
 
 function Team() {
   return (

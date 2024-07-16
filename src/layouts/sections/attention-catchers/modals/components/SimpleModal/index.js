@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -17,18 +17,18 @@ import { useState } from "react";
 
 // @mui material components
 import Container from "@mui/material/Container";
+import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 import Modal from "@mui/material/Modal";
-import Divider from "@mui/material/Divider";
 import Slide from "@mui/material/Slide";
 
 // @mui icons
 import CloseIcon from "@mui/icons-material/Close";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Eventflow.app React components
+import MKBox from "../../../../../../components/MKBox";
+import MKButton from "../../../../../../components/MKButton";
+import MKTypography from "../../../../../../components/MKTypography";
 
 function SimpleModal() {
   const [show, setShow] = useState(false);

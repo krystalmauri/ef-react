@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -14,16 +14,16 @@ Coded by www.creative-tim.com
 */
 
 /**
- * The base box-shadow styles for the Material Kit 2 React.
+ * The base box-shadow styles for the Eventflow.app React.
  * You can add new box-shadow using this file.
- * You can customized the box-shadow for the entire Material Kit 2 React using thie file.
+ * You can customized the box-shadow for the entire Eventflow.app React using thie file.
  */
 
-// Material Kit 2 React Base Styles
-import colors from "assets/theme/base/colors";
+// Eventflow.app React Base Styles
+import colors from "../base/colors";
 
-// Material Kit 2 React Helper Functions
-import boxShadow from "assets/theme/functions/boxShadow";
+// Eventflow.app React Helper Functions
+import boxShadow from "../functions/boxShadow";
 
 const { black, white, tabs, coloredShadows } = colors;
 

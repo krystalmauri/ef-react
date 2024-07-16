@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -14,16 +14,16 @@ Coded by www.creative-tim.com
 */
 
 // Sections components
-import BaseLayout from "layouts/sections/components/BaseLayout";
-import View from "layouts/sections/components/View";
+import BaseLayout from "../../components/BaseLayout";
+import View from "../../components/View";
 
 // Tooltips and popovers page components
-import Popovers from "layouts/sections/attention-catchers/tooltips-popovers/components/Popovers";
-import Tooltips from "layouts/sections/attention-catchers/tooltips-popovers/components/Tooltips";
+import Popovers from "../tooltips-popovers/components/Popovers";
+import Tooltips from "../tooltips-popovers/components/Tooltips";
 
 // Tooltips and popovers page components code
-import popoversCode from "layouts/sections/attention-catchers/tooltips-popovers/components/Popovers/code";
-import tooltipsCode from "layouts/sections/attention-catchers/tooltips-popovers/components/Tooltips/code";
+import popoversCode from "../tooltips-popovers/components/Popovers/code";
+import tooltipsCode from "../tooltips-popovers/components/Tooltips/code";
 
 function TooltipsPopovers() {
   return (

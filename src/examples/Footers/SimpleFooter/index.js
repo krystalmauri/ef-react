@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -21,12 +21,12 @@ import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Eventflow.app React components
+import MKBox from "../../../components/MKBox";
+import MKTypography from "../../../components/MKTypography";
 
-// Material Kit 2 React base styles
-import typography from "assets/theme/base/typography";
+// Eventflow.app React base styles
+import typography from "../../../assets/theme/base/typography";
 
 function SimpleFooter({ company, links, light }) {
   const { href, name } = company;
@@ -78,7 +78,6 @@ function SimpleFooter({ company, links, light }) {
               &nbsp;{name}&nbsp;
             </MKTypography>
           </Link>
-          for a better web.
         </MKBox>
         <MKBox
           component="ul"
@@ -106,12 +105,12 @@ function SimpleFooter({ company, links, light }) {
 
 // Setting default values for the props of SimpleFooter
 SimpleFooter.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+  company: { href: "https://krystalmauri.com", name: "Krystal Mauri, LLC." },
   links: [
-    { href: "https://www.creative-tim.com/", name: "Creative Tim" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
+    { href: "https://krystalmauri.com/", name: "Krystal Mauri, LLC." },
+    { href: "https://eventflow.app/about", name: "About Us" },
+    { href: "https://eventflow.app/blog", name: "Blog" },
+    { href: "https://eventflow.app/license", name: "License" },
   ],
   light: false,
 };

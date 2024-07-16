@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -17,18 +17,18 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
+// Eventflow.app React components
+import MKBox from "../../../../components/MKBox";
 
-// Material Kit 2 React examples
-import Breadcrumbs from "examples/Breadcrumbs";
+// Eventflow.app React examples
+import Breadcrumbs from "../../../../examples/Breadcrumbs";
 
 // Sections components
-import BaseLayout from "layouts/sections/components/BaseLayout";
-import View from "layouts/sections/components/View";
+import BaseLayout from "../../../sections/components/BaseLayout";
+import View from "../../../sections/components/View";
 
 // Breadcrumbs page components code
-import breadcrumbsCode from "layouts/sections/elements/breadcrumbs/code";
+import breadcrumbsCode from "../../elements/breadcrumbs/code";
 
 function BreadcrumbsEl() {
   return (

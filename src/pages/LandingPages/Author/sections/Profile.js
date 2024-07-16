@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -18,16 +18,43 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKAvatar from "components/MKAvatar";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Eventflow.app React components
+import MKAvatar from "../../../../components/MKAvatar";
+import MKBox from "../../../../components/MKBox";
+import MKButton from "../../../../components/MKButton";
+import MKTypography from "../../../../components/MKTypography";
 
 // Images
-import profilePicture from "assets/images/bruce-mars.jpg";
+import profilePicture from "../../../../assets/images/bruce-mars.jpg";
+
+
+
 
 function Profile() {
+
+  //const [vendor, setVendor] = useState<any>();
+
+
+  async function setVendorPage() {
+
+    const docRef = doc(firestore, "Saint Louis", id);
+    console.log('passed param ', id);
+    const docSnap = await getDoc(docRef);
+  
+  
+    if (docSnap.exists()) {
+      console.log("Document venue data:", docSnap.data());
+      const result = docSnap.data();
+      console.log('my result ', result);
+      setVenue(result);
+      //setVenue(docSnap.data());
+    } else {
+      // docSnap.data() will be undefined in this case
+      console.log("No such document!");
+    }
+  }
+  
+
   return (
     <MKBox component="section" py={{ xs: 6, sm: 12 }}>
       <Container>

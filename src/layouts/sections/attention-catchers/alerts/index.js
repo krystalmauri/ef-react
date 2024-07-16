@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -14,14 +14,14 @@ Coded by www.creative-tim.com
 */
 
 // Sections components
-import BaseLayout from "layouts/sections/components/BaseLayout";
-import View from "layouts/sections/components/View";
+import BaseLayout from "../../../sections/components/BaseLayout";
+import View from "../../../sections/components/View";
 
 // ALerts page components
-import SimpleAlerts from "layouts/sections/attention-catchers/alerts/components/SimpleAlerts";
+import SimpleAlerts from "../alerts/components/SimpleAlerts";
 
 // ALerts page components code
-import simpleAlertsCode from "layouts/sections/attention-catchers/alerts/components/SimpleAlerts/code";
+import simpleAlertsCode from "../alerts/components/SimpleAlerts/code";
 
 function Alerts() {
   return (

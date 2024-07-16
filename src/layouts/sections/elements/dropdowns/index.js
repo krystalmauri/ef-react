@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -14,14 +14,14 @@ Coded by www.creative-tim.com
 */
 
 // Sections components
-import BaseLayout from "layouts/sections/components/BaseLayout";
-import View from "layouts/sections/components/View";
+import BaseLayout from "../../components/BaseLayout";
+import View from "../../components/View";
 
 // Dropdowns page components
-import DropdownAndDropup from "layouts/sections/elements/dropdowns/components/DropdownAndDropup";
+import DropdownAndDropup from "../dropdowns/components/DropdownAndDropup";
 
 // Dropdowns page components code
-import dropdownAndDropupCode from "layouts/sections/elements/dropdowns/components/DropdownAndDropup/code";
+import dropdownAndDropupCode from "../dropdowns/components/DropdownAndDropup/code";
 
 function Dropdowns() {
   return (

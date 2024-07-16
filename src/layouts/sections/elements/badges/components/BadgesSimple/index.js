@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -18,9 +18,9 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
+// Eventflow.app React components
+import MKBadge from "../../../../../../components/MKBadge";
+import MKBox from "../../../../../../components/MKBox";
 
 function BadgesSimple() {
   return (

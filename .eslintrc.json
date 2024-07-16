@@ -3,7 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -13,14 +13,18 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
-    "prettier/prettier": [
+    "prettier/prettier": 0/*
+    [
       "error",
       {
         "endOfLine": "auto"
       }
-    ],
+    ]*/,
+    "no-unused-vars": "off",
+    "no-unescaped-entities": "off",
+    "no-undef": "off",
     "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "react/jsx-props-no-spreading": [
       1,
       {

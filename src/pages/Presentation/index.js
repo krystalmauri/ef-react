@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -18,33 +18,35 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKSocialButton from "components/MKSocialButton";
+// Eventflow.app React components
+import MKBox from "../../components/MKBox";
+import MKTypography from "../../components/MKTypography";
+import MKSocialButton from "../../components/MKSocialButton";
+import MKButton from "../../components/MKButton";
 
-// Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+
+// Eventflow.app React examples
+import DefaultNavbar from "../../examples/Navbars/DefaultNavbar";
+import DefaultFooter from "../../examples/Footers/DefaultFooter";
+import FilledInfoCard from "../../examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
+import Counters from "../Presentation/sections/Counters";
+import Information from "../Presentation/sections/Information";
+import DesignBlocks from "../Presentation/sections/DesignBlocks";
+import Pages from "../Presentation/sections/Pages";
+import Testimonials from "../Presentation/sections/Testimonials";
+import Download from "../Presentation/sections/Download";
 
 // Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+import BuiltByDevelopers from "../Presentation/components/BuiltByDevelopers";
 
 // Routes
-import routes from "routes";
-import footerRoutes from "footer.routes";
+import routes from "../../routes";
+import footerRoutes from "../../footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "../../assets/images/bg1.jpg";
 
 function Presentation() {
   return (
@@ -83,7 +85,7 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              Eventflow.app{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -92,9 +94,15 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              Your ultimate platform for orchestrating unforgettable weddings and milestone birthday celebrations.
             </MKTypography>
+            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
+              for planners
+            </MKButton> 
+            <span>&nbsp;</span>
+            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
+              for vendors
+            </MKButton>
           </Grid>
         </Container>
       </MKBox>
@@ -109,22 +117,29 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Counters />
-        <Information />
-        <DesignBlocks />
+                <Information />
+
+        
+       {/* 
+       <Counters />
+       <DesignBlocks />
+
         <Pages />
-        <Container sx={{ mt: 6 }}>
-          <BuiltByDevelopers />
-        </Container>
+        */
+      }
+       
         <Container>
+          {// TODO: this 
+          }
           <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 variant="gradient"
                 color="info"
                 icon="flag"
-                title="Getting Started"
-                description="Check the possible ways of working with our product and the necessary files for building your own project."
+                title="Discover and Connect"
+                description="Tap into our curated network of vendors for weddings and milestone 
+                birthdays. Choose your ideal venue, caterer, and more with ease."
                 action={{
                   type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
@@ -136,8 +151,9 @@ function Presentation() {
               <FilledInfoCard
                 color="info"
                 icon="precision_manufacturing"
-                title="Plugins"
-                description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
+                title="Plan and Organize"
+                description="Use our innovative tools to schedule, budget, and oversee your event, 
+                ensuring a delightful planning experience from anywhere, anytime."
                 action={{
                   type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/overview/datepicker/",
@@ -149,8 +165,8 @@ function Presentation() {
               <FilledInfoCard
                 color="info"
                 icon="apps"
-                title="Components"
-                description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
+                title="Celebrate and Share"
+                description="Experience the magic of your dream event and share the joy with everyone who matters."
                 action={{
                   type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
@@ -160,17 +176,18 @@ function Presentation() {
             </Grid>
           </Grid>
         </Container>
-        <Testimonials />
-        <Download />
+        {// <Testimonials /> <Download />
+}
+<Container sx={{ mt: 6 }}>
+          <BuiltByDevelopers />
+        </Container>
+        
         <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
               <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
                 <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
-                  Thank you for your support!
-                </MKTypography>
-                <MKTypography variant="body1" color="text">
-                  We deliver the best web products
+                  Start Planning!
                 </MKTypography>
               </Grid>
               <Grid

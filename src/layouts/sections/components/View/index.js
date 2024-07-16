@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Eventflow.app React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -13,7 +13,7 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // prop-types is a library for type checking of props
 import PropTypes from "prop-types";
@@ -26,20 +26,20 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 // @mui material components
-import Grid from "@mui/material/Grid";
 import AppBar from "@mui/material/AppBar";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
+import Grid from "@mui/material/Grid";
 import Slide from "@mui/material/Slide";
+import Tab from "@mui/material/Tab";
+import Tabs from "@mui/material/Tabs";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKAlert from "components/MKAlert";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Eventflow.app React components
+import MKAlert from "../../../../components/MKAlert";
+import MKBox from "../../../../components/MKBox";
+import MKButton from "../../../../components/MKButton";
+import MKTypography from "../../../../components/MKTypography";
 
-// Material Kit 2 React base styles
-import colors from "assets/theme/base/colors";
+// Eventflow.app React base styles
+import colors from "../../../../assets/theme/base/colors";
 
 function View({ children, code, title, height, ...rest }) {
   const { grey } = colors;
